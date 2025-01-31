@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>San Valentín</title>
+	<style>
+		body {
+			background-color: #000; /* Fondo negro */
+			color: #fff; /* Texto blanco */
+			font-family: Arial, sans-serif;
+			transition: background-color 0.5s ease-in-out;
+		}
+		.contenedor {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.titulo {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.mensaje {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		.boton {
+			background-color: #ff69b4; /* Color rosa */
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.boton:hover {
+			background-color: #ff99cc;
+		}
+		.fondo-negro {
+			background-color: #000; /* Fondo negro */
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.gif-rosas {
+			width: 500px;
+			height: 500px;
+			background-image: url('Rosa amarilla2.gif'); /* GIF de rosas amarillas */
+			background-size: cover;
+			background-position: center;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		.texto-gracias {
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 20px;
+			color: #ff99cc; /* Color rosado */
+			font-family: 'Playfair Display', serif; /* Fuente elegante */
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="titulo">¿Quieres ser mi San Valentín mi amor?</div>
+		<div class="mensaje">Quiero compartir este día especial contigo.</div>
+		<button class="boton" onclick="aceptar()">¡Sí, quiero ser tu San Valentín!</button>
+	</div>
+
+	<script>
+		function aceptar() {
+			document.body.innerHTML = `
+				<div class="fondo-negro">
+					<div class="gif-rosas"></div>
+					<div class="texto-gracias">Gracias por aceptar ser mi San Valentín. Te amo mucho, mi niña. Le pedi a Dios un amor bonito y llegaste tu.</div>
+				</div>
+			`;
+		}
+	</script>
+</body>
+</html>
